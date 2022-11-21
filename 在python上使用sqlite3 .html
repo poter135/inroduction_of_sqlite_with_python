@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="在python上使用sqlite3" data-id="在python上使用sqlite3"><a class="anchor hidden-xs" href="#在python上使用sqlite3" title="在python上使用sqlite3"><span class="octicon octicon-link"></span></a><span>在python上使用sqlite3</span></h1><p><span class="toc"><ul>
+    <div id="doc" class="markdown-body container-fluid comment-enabled comment-inner" data-hard-breaks="true"><h1 id="在python上使用sqlite3" data-id="在python上使用sqlite3"><a class="anchor hidden-xs" href="#在python上使用sqlite3" title="在python上使用sqlite3"><span class="octicon octicon-link"></span></a><span>在python上使用sqlite3</span></h1><p><span class="toc"><ul>
 <li><a href="#在python上使用sqlite3" title="在python上使用sqlite3">在python上使用sqlite3</a><ul>
 <li><a href="#introduction" title="introduction">introduction</a></li>
 <li><a href="#Create-table" title="Create table">Create table</a></li>
@@ -184,7 +184,7 @@ c.commit()
 </div></div></code></pre><h3 id="delete" data-id="delete"><a class="anchor hidden-xs" href="#delete" title="delete"><span class="octicon octicon-link"></span></a><span>delete</span></h3><p><span>用</span><code>DELETE FROM &lt;table_name&gt; WHERE ...</code><span>來刪除指定項(通常使用rowid)</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
 <span></span></div><div class="code">c.execute(<span class="hljs-string">"DELETE FROM &lt;table_name&gt; WHERE &lt;col_name&gt; = &lt;value&gt;"</span>)
 conn.commit()
-</div></div></code></pre><h3 id="drop-tabe" data-id="drop-tabe"><a class="anchor hidden-xs" href="#drop-tabe" title="drop-tabe"><span class="octicon octicon-link"></span></a><span>drop tabe</span></h3><p><span>刪除整個</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+</div></div></code></pre><h3 id="drop-tabe" data-id="drop-tabe"><a class="anchor hidden-xs" href="#drop-tabe" title="drop-tabe"><span class="octicon octicon-link"></span></a><span>drop tabe</span></h3><p><span>刪除整個table</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
 <span></span></div><div class="code">c.execute(<span class="hljs-string">"DROP TABLE &lt;table_name&gt;"</span>)
 conn.commit()
 </div></div></code></pre><div class="alert alert-info">
@@ -205,16 +205,16 @@ conn.commit()
 <li><a href="#Insert-mutiple-data" title="Insert mutiple data">Insert mutiple data</a></li>
 </ul>
 </li>
-<li class=""><a href="#query" title="query">query</a><ul class="nav">
+<li><a href="#query" title="query">query</a><ul class="nav">
 <li><a href="#Select" title="Select">Select</a></li>
 <li><a href="#Fetch" title="Fetch">Fetch</a></li>
-<li class=""><a href="#WHERE" title="WHERE">WHERE</a></li>
+<li><a href="#WHERE" title="WHERE">WHERE</a></li>
 </ul>
 </li>
-<li><a href="#Edit" title="Edit">Edit</a><ul class="nav">
+<li class=""><a href="#Edit" title="Edit">Edit</a><ul class="nav">
 <li><a href="#update" title="update">update</a></li>
 <li><a href="#delete" title="delete">delete</a></li>
-<li><a href="#drop-tabe" title="drop tabe">drop tabe</a></li>
+<li class=""><a href="#drop-tabe" title="drop tabe">drop tabe</a></li>
 </ul>
 </li>
 </ul>
@@ -227,23 +227,23 @@ conn.commit()
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
         <div class="toc"><ul class="nav">
 <li class=""><a href="#在python上使用sqlite3" title="在python上使用sqlite3">在python上使用sqlite3</a><ul class="nav">
-<li class=""><a href="#introduction" title="introduction">introduction</a></li>
-<li class=""><a href="#Create-table" title="Create table">Create table</a></li>
-<li class=""><a href="#INSERT" title="INSERT">INSERT</a><ul class="nav">
-<li class=""><a href="#Insert-single-data" title="Insert single data">Insert single data</a></li>
-<li class=""><a href="#Insert-mutiple-data" title="Insert mutiple data">Insert mutiple data</a></li>
+<li><a href="#introduction" title="introduction">introduction</a></li>
+<li><a href="#Create-table" title="Create table">Create table</a></li>
+<li><a href="#INSERT" title="INSERT">INSERT</a><ul class="nav">
+<li><a href="#Insert-single-data" title="Insert single data">Insert single data</a></li>
+<li><a href="#Insert-mutiple-data" title="Insert mutiple data">Insert mutiple data</a></li>
 </ul>
 </li>
-<li class=""><a href="#query" title="query">query</a><ul class="nav">
-<li class=""><a href="#Select" title="Select">Select</a></li>
-<li class=""><a href="#Fetch" title="Fetch">Fetch</a></li>
-<li class=""><a href="#WHERE" title="WHERE">WHERE</a></li>
+<li><a href="#query" title="query">query</a><ul class="nav">
+<li><a href="#Select" title="Select">Select</a></li>
+<li><a href="#Fetch" title="Fetch">Fetch</a></li>
+<li><a href="#WHERE" title="WHERE">WHERE</a></li>
 </ul>
 </li>
-<li><a href="#Edit" title="Edit">Edit</a><ul class="nav">
+<li class=""><a href="#Edit" title="Edit">Edit</a><ul class="nav">
 <li><a href="#update" title="update">update</a></li>
 <li><a href="#delete" title="delete">delete</a></li>
-<li><a href="#drop-tabe" title="drop tabe">drop tabe</a></li>
+<li class=""><a href="#drop-tabe" title="drop tabe">drop tabe</a></li>
 </ul>
 </li>
 </ul>
