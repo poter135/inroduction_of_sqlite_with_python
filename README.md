@@ -114,7 +114,7 @@ c.execute("DELETE FROM <table_name> WHERE <col_name> = <value>")
 conn.commit()
 ```
 ### drop tabe
-刪除整個
+刪除整個table
 ```python=
 c.execute("DROP TABLE <table_name>")
 conn.commit()
