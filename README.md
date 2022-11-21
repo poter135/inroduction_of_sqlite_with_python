@@ -1,6 +1,5 @@
-# inroduction_sqlite_with_python
 # 在python上使用sqlite3
-[TOC]
+
 ## introduction
 - sqlite3在python是內建的package，不需要額外import
 ```python=
